@@ -1,0 +1,110 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+	box-sizing: border-box;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+	margin:0;
+	padding: 80px 0 0 0;
+    width:100%;
+	background-color:#fff;
+	font-size:14px;
+}
+
+pre {
+	background-color: #ECECEC;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+
+.sample1024,
+.sample768,
+.sample600,
+.sample480
+{
+	position: fixed;
+	display:block;
+	top: 0;
+	left:0;
+	height:100%;
+	border: 1px solid #ccc;
+}
+
+.sample1024 {
+	width: 1024px;
+}
+.sample768 {
+	top:30px;
+	width: 768px;
+	border-color:red;
+}
+.sample600 {
+	top:60px;
+	width: 600px;
+	border-color:blue;
+}
+.sample480 {
+	top:90px;
+	width: 480px;
+	border-color:green;
+}
+
+.wh {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: #666;
+	color: #fff;
+	padding: 2px 8px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+
+/* スマホのみ可変フォントサイズ */
+/* 769 〜 1024 ipad横向き */
+@media screen and (max-device-width: 1024px){
+
+	body,pre {
+		font-size:28px;
+	}
+}
+/* 601 〜 768px ipad */
+@media screen and (max-device-width: 768px){
+
+	body,pre {
+		font-size:26px;
+	}
+}
+/* 481 〜 600px */
+@media screen and (max-device-width: 600px){
+
+	body,pre {
+		font-size:24px;
+	}
+}
+/* 361 〜 480px */
+/* iphone6 375, iphone6+ 414 */
+@media screen and (max-device-width: 480px){
+
+	body,pre {
+		font-size:22px;
+	}
+}
+/* 〜 360px nexus5 とか */
+@media screen and (max-device-width: 360px){
+
+	body,pre {
+		font-size:20px;
+	}
+}
+
+
+
